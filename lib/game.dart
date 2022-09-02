@@ -33,7 +33,6 @@ class PacManGame extends StatefulWidget {
 class _PacManGameState extends State<PacManGame> {
   @override
   Widget build(BuildContext context) {
-    double screenPorportion = MediaQuery.of(context).size.width/MediaQuery.of(context).size.height;
     return BonfireWidget(
       // Mapa e configurações
       map: WorldMapByTiled(
@@ -42,11 +41,12 @@ class _PacManGameState extends State<PacManGame> {
       ),
       cameraConfig: CameraConfig(
         target: camera,
-        zoom: 0.4 * screenPorportion,
+        zoom: 0.4,
         sizeMovementWindow: Vector2(1, 1),
       ),
       onTapDown: (game, screenPosition, worldPosition) => fixScreen(),
       onReady: (game) {
+        game.camera.zoom = 0.4 * MediaQuery.of(context).size.width / MediaQuery.of(context).size.height;
         restartGame(game);
       },
 
@@ -62,7 +62,8 @@ class _PacManGameState extends State<PacManGame> {
 
       // Controle
       joystick: Joystick(
-        keyboardConfig: KeyboardConfig(keyboardDirectionalType: KeyboardDirectionalType.wasdAndArrows),
+        keyboardConfig: KeyboardConfig(
+            keyboardDirectionalType: KeyboardDirectionalType.wasdAndArrows),
         directional: JoystickDirectional(isFixed: false),
       ),
 
@@ -70,5 +71,3 @@ class _PacManGameState extends State<PacManGame> {
     );
   }
 }
-
-
