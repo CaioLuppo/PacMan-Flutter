@@ -41,14 +41,11 @@ class _PacManGameState extends State<PacManGame> {
       ),
       cameraConfig: CameraConfig(
         target: camera,
-        zoom: 0.4,
+        zoom: 1,
         sizeMovementWindow: Vector2(1, 1),
       ),
       onTapDown: (game, screenPosition, worldPosition) => fixScreen(),
-      onReady: (game) {
-        game.camera.zoom = 0.4 * MediaQuery.of(context).size.width / MediaQuery.of(context).size.height;
-        restartGame(game);
-      },
+      onReady: (game) => restartGame(game),
 
       // Player e fantasmas
       player: player,

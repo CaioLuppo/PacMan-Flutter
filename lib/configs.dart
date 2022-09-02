@@ -22,6 +22,9 @@ Future fixScreen() async {
 class GameCam extends GameComponent {
   @override
   void update(double dt) {
+    gameRef.camera.zoom = 0.4 *
+        MediaQuery.of(context).size.width /
+        MediaQuery.of(context).size.height;
     position = Vector2(401, 200);
     super.update(dt);
   }

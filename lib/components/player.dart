@@ -74,7 +74,7 @@ class PacManPlayer extends SimplePlayer with ObjectCollision {
       });
       buffedWasSet = false;
     }
-    buffed ? speed = 120 : speed = 90;
+    buffed ? speed = 150 : speed = 90;
   }
 }
 
