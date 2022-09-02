@@ -54,16 +54,12 @@ class Ghost extends SimpleEnemy
       return false;
     } else if (component is Player) {
       // Se for player
-      if (buffed) {
-        // Quando está buffado
-        if (!wasAte) {
-          position = ghostPos;
-          score += 200;
-        }
+      if (buffed && !wasAte) {
+        position = ghostPos;
+        score += 200;
         wasAte = true;
         replaceAnimation(loadGhostAnimations(color));
       } else {
-        // Quando não está buffado
         if (!dead) {
           player.killPlayer();
           dead = true;
@@ -76,6 +72,7 @@ class Ghost extends SimpleEnemy
     }
     return super.onCollision(component, active);
   }
+
 
   @override
   void update(double dt) {

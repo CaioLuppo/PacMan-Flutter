@@ -1,3 +1,4 @@
+import 'package:bonfire/base/bonfire_game_interface.dart';
 import 'package:bonfire/bonfire.dart';
 import 'dart:async' as ac;
 
@@ -57,7 +58,7 @@ class PacManPlayer extends SimplePlayer with ObjectCollision {
     lifes--;
     lifes <= 0 ? gameOver = true : player.position = initialPosition;
 
-    unsetBuff();
+    unsetBuff(gameRef);
 
     // Delay para não colidir novamente e tirar mais vidas
     ac.Timer(const Duration(milliseconds: 500), () => {dead = false});
@@ -79,7 +80,9 @@ class PacManPlayer extends SimplePlayer with ObjectCollision {
 }
 
 /// Seta o modo "buff" do pacman para falso.
-void unsetBuff() {
+void unsetBuff(BonfireGameInterface gameRef) {
   buffedWasSet = false;
+  buffed = false;
   buffCountdown.cancel();
+  replaceGhostsAnimations(gameRef);
 }

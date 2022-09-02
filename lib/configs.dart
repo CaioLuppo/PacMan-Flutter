@@ -70,7 +70,7 @@ void restartGame(BonfireGameInterface game) {
   won = false;
   gameOver = false;
 
-  unsetBuff();
+  unsetBuff(game);
 }
 
 /// Encerra o jogo
