@@ -1,16 +1,20 @@
-# pacman
+# PacMan em Flutter! <img src="https://escribo.com/wp-content/uploads/2018/08/Marca-Escribo-Branca.png" style="width: 20%" align="right">
 
-A new Flutter project.
+Aqui encontra-se um dos códigos utilizados para o processo seletivo na Escribo, 
+uma empresa apaixonada pela educação que utiliza apps de jogos pedagógicos a fim de melhorar o aprendizado dos alunos!
 
-## Getting Started
+Neste teste, foi solicitado uma réplica do jogo Pac-Man utilizando a ferramenta de desenvolvimento Flutter!
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Como jogar
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+É muito simples, basta baixar o apk, ou jogar aqui! 😉
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+<img src="/assets/images/GitHub/print.jpeg" style="border-radius: 20%">
+
+### Creditos
+
+Sprites feitos por drakzlin, disponíveis em: https://opengameart.org/content/20x20-tileset.
+
+> LinkedIn: https://linkedin.com/in/CaioLuppo
