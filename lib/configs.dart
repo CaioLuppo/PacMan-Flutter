@@ -77,9 +77,11 @@ void restartGame(BonfireGameInterface game) {
 void endGame(BuildContext context, BonfireGameInterface game, String title,
     String message) {
   showDialog(
+    barrierDismissible: false,
     context: context,
     builder: (context) {
       return AlertDialog(
+
         title: Text(title),
         content: Text(
           message,
