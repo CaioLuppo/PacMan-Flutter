@@ -8,7 +8,7 @@ Neste teste, foi solicitado uma réplica do jogo Pac-Man utilizando a ferramenta
 
 ## Como jogar
 
-É muito simples, basta baixar o apk, ou jogar aqui! 😉
+É muito simples, basta <a href='https://github.com/CaioLuppo/PacMan-Flutter/releases/tag/v1.0.0'>baixar o jogo</a> na versão que desejar, ou <a href='https://caioluppo.github.io/PacMan-Flutter'>jogar aqui!</a> 😉
 
 
 <img src="/assets/images/GitHub/print.jpeg" style="border-radius: 20%">
